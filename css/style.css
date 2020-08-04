@@ -102,29 +102,26 @@ body{
   }
 }
 
-.logo-pc img{
-  height: 40px;
-  width: 100%;
+.logo-pc{
+  display: block;
+  width: 219px;
+  height: 100px;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg) no-repeat 50% 50%;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .logo-mobile{
   display: none;
 }
 @media (max-width:992px){
-  .logo-mobile img{
-    width: 100%;
-    height: 20px;
-  }
-  .logo-pc{
-    display: none;
-  }
   .logo-mobile{
-    display: block;
-  }
-}
-@media (max-width:767px){
-  .logo-mobile img{
-    width: 100%;
-    height: 20px;
+    width: 114px;
+    height: 5rem;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg) no-repeat 50% 50%;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
   }
   .logo-pc{
     display: none;
@@ -164,6 +161,7 @@ body{
 }
 .cart{
   display: block;
+  color: #3F5D45;
   margin-left: 30px;
 }
 .cart:hover{
@@ -202,6 +200,9 @@ body{
     transition: all .3s;
   }
   .cart:hover{
+    border: 0;
+        box-shadow: 0 0 0 #fff;
+    color: #3F5D45;
     padding: 0;
   }
 }
@@ -308,10 +309,15 @@ body{
   background: #3F5D45;
   padding: 10px;
 }
-.product-tag img{
+.product-tag i{
+  color: #3F5D45;
+  font-size: 1.25rem;
   position: absolute;
   top: 19px;
   right: 22px;
+}
+.product-tag i:hover{
+  font-weight: bold;
 }
 .productList-item-img{
   width: 100%;
@@ -451,20 +457,34 @@ body{
 }
 .subscription-input{
   display: flex;
+  position: relative;
+  background: #EAF0ED;
   max-width: 380px;
   height: 64px;
+}
+.subscription-input i{
+  position: absolute;
+  font-size: 1.5rem;
+  top: 1.25rem;
+  left: 1.25rem;
+  color: #3F5D45;
 }
 .subscription-typeIn{
   width: 316px;
   font-size: 24px;
+  background: #EAF0ED;
   border: 0;
-  padding-left: 60px;
-  background: #EAF0ED url(https://hexschool.github.io/webLayoutTraining1st/student-week1/mail-24px.png) no-repeat 20px 20px;
+  padding-left: 4rem;
 }
+
 .subscription-btn{
-  width: 64px;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 600;
+  font-size: 1rem;
+  width: 4rem;
+  background: #ffe180;
   border: 0;
-  background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png) #FFE180 no-repeat center;
+  /* background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png) #FFE180 no-repeat center; */
   cursor: pointer;
 }
 .subscription-btn:active {
@@ -517,23 +537,11 @@ body{
   line-height: 24px;
   font-weight: 300;
 }
-.footer-content-slogan{
-  display: flex;
-  flex-direction: row-reverse;
+.footer-content-slogan img{
+  display: block;
+  height: 219px;
+  width: 60px;
 }
-.footer-content-slogan p{
-  color: #3F5D45;
-  font-size: 28px;
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
-  font-weight: 600;
-  line-height: 32px;
-  writing-mode: vertical-rl;
-  padding: 6px;
-}
-.footer-content-slogan p:first-child{
-  text-indent: -0.5em;
-}
-
 .footer-legal{
   display: flex;
   justify-content: space-between;

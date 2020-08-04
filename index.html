@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweetaste</title>
+    <meta property="og:title" content="甜點電商">
+    <meta property="og:description" content="week5多頁式設計">
+    <meta property="og:site_name" content="甜點電商">
+    <meta property="og:locale" content="zh_TW">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/all.js"></script>
@@ -13,21 +18,15 @@
         <div class="header">
             <button class="hamIcon"><img src="https://hexschool.github.io/webLayoutTraining1st/student-week1/dehaze-24px.png" alt=""></button>
             <h1 class="logo">
-                <a class="logo-pc" href="#"><img
-                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg"
-                        alt=""></a>
-                <a class="logo-mobile" href="#"><img
-                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg"
-                        alt=""></a>
+                <a class="logo-pc" href="#">logo</a>
+                <a class="logo-mobile" href="#">logo</a>
             </h1>
             <ul class="nav">
                 <li><a href="#">首頁</a></li>
                 <li><a href="#">甜點</a></li>
                 <li><a href="#">登入</a></li>
             </ul>
-            <a class="cart" href="#"><img
-                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/shopping_cart.png"
-                        alt=""></a>
+            <a class="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
         </div>
     
         <div class="banner" data-aos="zoom-in-down">
@@ -49,9 +48,7 @@
                     <li class="productList-item" data-aos="zoom-out-down">
                         <div class="product-tag">
                             <p>本日精選</p>
-                            <a href="#"><img
-                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-                                    alt=""></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
                         </div>
                         <img class="productList-item-img"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-1.png"
@@ -64,9 +61,7 @@
                     <li class="productList-item" data-aos="zoom-out-down">
                         <div class="product-tag">
                             <p>本日精選</p>
-                            <a href="#"><img
-                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-                                    alt=""></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
                         </div>
                         <img class="productList-item-img"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-2.png"
@@ -79,9 +74,7 @@
                     <li class="productList-item" data-aos="zoom-out-down">
                         <div class="product-tag">
                             <p>本日精選</p>
-                            <a href="#"><img
-                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-                                    alt=""></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
                         </div>
                         <img class="productList-item-img"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-3.png"
@@ -94,9 +87,7 @@
                     <li class="productList-item" data-aos="zoom-out-down">
                         <div class="product-tag">
                             <p>本日精選</p>
-                            <a href="#"><img
-                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-                                    alt=""></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
                         </div>
                         <img class="productList-item-img"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-4.png"
@@ -109,9 +100,7 @@
                     <li class="productList-item" data-aos="zoom-out-down">
                         <div class="product-tag">
                             <p>本日精選</p>
-                            <a href="#"><img
-                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-                                    alt=""></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
                         </div>
                         <img class="productList-item-img"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-5.png"
@@ -124,9 +113,7 @@
                     <li class="productList-item" data-aos="zoom-out-down">
                         <div class="product-tag">
                             <p>本日精選</p>
-                            <a href="#"><img
-                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png"
-                                    alt=""></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
                         </div>
                         <img class="productList-item-img"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/p-6.png"
@@ -158,8 +145,9 @@
                 <label for="mail" class="subscription-title">訂閱你我的甜蜜郵件</label>
             </div>
             <div class="subscription-input">
+                <i class="fas fa-envelope"></i>
                 <input id="mail" type="email" name="mail" class="subscription-typeIn">
-                <input type="button" value="" class="subscription-btn">
+                <input type="button" value="&#xf061" class="subscription-btn">
             </div>
         </div>
     </form>
@@ -177,8 +165,7 @@
                     </ul>
                 </div>
                 <div class="footer-content-slogan">
-                    <p>今 天 是 個 ——</p>
-                    <p>吃 甜 點 的 好 日 子˚</p>
+                    <img src="images/quote.svg" alt="">
                 </div>
             </div>
             <div class="footer-legal">
