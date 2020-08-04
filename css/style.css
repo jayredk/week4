@@ -489,6 +489,7 @@ body{
   width: 4rem;
   background: #ffe180;
   border: 0;
+  color: #3F5D45;
   /* background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png) #FFE180 no-repeat center; */
   cursor: pointer;
 }
