@@ -95,6 +95,8 @@ body{
   background: #fff;
   display: none;
   cursor: pointer;
+  font-size: 1.25rem;
+  color: #3F5D45;
 }
 @media (max-width:992px){
   .hamIcon{
@@ -198,6 +200,9 @@ body{
     background: #3F5D45;
     border-radius: 10px;
     transition: all .3s;
+  }
+  .cart{
+    margin-left: 0;
   }
   .cart:hover{
     border: 0;
